@@ -101,10 +101,10 @@
 			</section>
 			
 		
-		<!-- Three -->
+		
 		
 
-		<!-- Four -->
+		<!-- Three -->
 		<section id="four" class="main style2 dark fullscreen">
 			<div class="content box style1" id='bubble'>
 				<header>
@@ -115,6 +115,7 @@
 			<a href="#three" class="button style2 down anchored">Next</a>
 		</section>
 
+		<!-- Four -->
 		<section id="three" class="main style2 dark fullscreen">
 			<div class="content box style2">
 				<header>
@@ -176,9 +177,7 @@ chart: {
   
 },
 
-data: {
-  csvURL: window.location.origin + '/csv/totalEnrollment.csv'
-},
+
 
 title: {
   text: null
@@ -195,11 +194,14 @@ yAxis: [{ // left y axis
   }
 }],
 
-xAxis: [{ // left y axis
+xAxis: { // left y axis
   title: {
 	text: "Year"
-  }
-}],
+  },
+  accessibility: {
+            rangeDescription: 'Range: 1970 to 2014'
+        }
+},
 
 legend: {
   align: 'left',
@@ -228,14 +230,95 @@ series: [{
   marker: {
 	radius: 5
   },
-  color: '#1493d2'
+  color: '#1493d2',
+  data:[19.37,19.87,20.85,21.67,22.62,23.84,25.25,25.52,26.4,27.08,27.95,29.24
+,30.12,
+31.3,
+32.83,
+33.6,
+34.2,
+35.07,
+35.09,
+35.83,
+36.6,
+37.37,
+37.93,
+38.91,
+40.4,
+41.85,
+43.29,
+45.06,
+45.98,
+48.65,
+51.03,
+54.52,
+58.97,
+63.21,
+66.47,
+69.54,
+72.86,
+76.88,
+81.15,
+85.08,
+89.71,
+94.58,
+96.74,
+97.39,
+102.87
+]
 }, {
   name: 'Female Number',
   lineWidth: 4,
   marker: {
 	radius: 5
   },
-  color: '#f8991c'
+  color: '#f8991c',
+  data:[13.61,
+13.97,
+14.76,
+15.64,
+16.57,
+17.7,
+18.78,
+19.59,
+20.55,
+21.28,
+22.14,
+23.22,
+24.25,
+25.21,
+26.53,
+27.32,
+27.64,
+28.47,
+29.08,
+30.06,
+31.31,
+32.32,
+33.47,
+34.8,
+36.29,
+38.12,
+39.53,
+41.73,
+43.01,
+46.18,
+48.69,
+52.19,
+57.83,
+62.1,
+65.96,
+69.73,
+74.07,
+78.4,
+82.99,
+87.08,
+91.71,
+96.47,
+100.18,
+101.58,
+107.86,
+]
 }]
 });
 
